@@ -5,7 +5,7 @@ function Contact (props){
     return(
         <>
             <figure className= "Contact">
-                < img classname= "avatar" src= {props.avatar} alt={props.name}/>
+                < img className= "avatar" src= {props.avatar} alt={props.name}/>
                 < figcaption className= "name">               
                     <h2 className= "name">{props.name}</h2>
                     <div className= "status">
