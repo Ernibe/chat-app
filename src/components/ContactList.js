@@ -5,37 +5,37 @@ import Contact from "./Contact";
 const listContacts = [
     {name:'Ethel GRIFFIN',
     avatar:'https://randomuser.me/api/portraits/women/24.jpg',
-    status: true,
+    online: true,
     },
     {name: 'René WALLACE',
     avatar:'https://randomuser.me/api/portraits/men/17.jpg',
-    status: true,
+    online: true,
     },
     {name: 'Dave ELLIOT',
     avatar:'https://randomuser.me/api/portraits/men/2.jpg',
-    status: false,
+    online: false,
     },
     {name: 'Deneise VALMENTE',
     avatar:'https://randomuser.me/api/portraits/women/44.jpg',
-    status: false,
+    online: false,
     },
     {name: 'David JHONNYT',
     avatar:'https://randomuser.me/api/portraits/men/91.jpg',
-    status: true,
+    online: true,
     },
 ]
 
-const ContactList = () => (
-
-   <div>
-        {listContacts.map(item => (
-           <Contact avatar={item.avatar} name={item.name} status={item.online}/>
-        )) }
-
-
-    </div>
+const ContactList = () => {        
+     return(
+            <div>
+            {listContacts.map(item => (
+               <Contact avatar={item.avatar} name={item.name} online={item.online}/>
+            )) }
     
-)
+    
+        </div>
+        )
+            }
 
 
 export default ContactList;
